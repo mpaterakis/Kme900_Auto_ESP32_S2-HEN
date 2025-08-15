@@ -23,11 +23,11 @@
                      // this requires a board with a sd card slot or a sd card connected.
 
 // use FatFS not SPIFFS [ true / false ]
-#define USEFAT true  // FatFS will be used instead of SPIFFS for the storage filesystem or for larger partitons on boards with more than 4mb flash. \
+#define USEFAT false  // FatFS will be used instead of SPIFFS for the storage filesystem or for larger partitons on boards with more than 4mb flash. \
                       // you must select a partition scheme labeled with "FAT" or "FATFS" with this enabled.
 
 // use LITTLEFS not SPIFFS [ true / false ]
-#define USELFS false  // LITTLEFS will be used instead of SPIFFS for the storage filesystem. \
+#define USELFS true  // LITTLEFS will be used instead of SPIFFS for the storage filesystem. \
                       // you must select a partition scheme labeled with "SPIFFS" with this enabled and USEFAT must be false.
 
 // enable internal goldhen.h [ true / false ]
@@ -35,8 +35,8 @@
                      // with this enabled you do not upload goldhen to the board, set this to false if you wish to upload goldhen.
 
 // enable autohen [ true / false ]
-#define AUTOHEN false  // this will load goldhen instead of the normal index/payload selection page, use this if you only want hen and no other payloads. \
-                       // you can update goldhen by uploading the goldhen payload to the board storage with the filename "goldhen.bin".
+#define AUTOHEN false  // this will load hen instead of the normal index/payload selection page, use this if you only want hen and no other payloads. \
+                       // you can update hen by uploading the hen payload to the board storage with the filename "pl_hen.bin".
 
 // enable fan threshold [ true / false ]
 #define FANMOD false  // this will include a function to set the consoles fan ramp up temperature in °C \
